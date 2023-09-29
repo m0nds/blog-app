@@ -1,0 +1,107 @@
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-style: 22px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .links {
+        display: none;
+    }
+    
+    .mobileLinks {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 2rem 0.5rem;
+    }
+    
+    .mobileLink {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.8rem;
+        list-style: none;
+    }
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px; /* Corrected 'font-style' to 'font-size' */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Initially hide on small screens */
+    display: none;
+}
+
+/* Style the hamburger icon */
+.hamburgerIcon {
+    font-size: 24px;
+    cursor: pointer;
+    /* Show on small screens */
+    display: block;
+}
+
+/* Style the menu when it's open */
+.links.open {
+    /* Show the menu when it's open on small screens */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media query for larger screens (adjust max-width as needed) */
+@media screen and (min-width: 769px) {
+    .links {
+        /* Show the links on larger screens */
+        display: flex;
+    }
+    
+    /* Hide the hamburger icon on larger screens */
+    .hamburgerIcon {
+        display: none;
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logout {
+    padding: 5px;
+    border: none;
+    background-color: #53c28b;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+

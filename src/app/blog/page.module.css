@@ -1,0 +1,39 @@
+.mainContainer {
+    padding: 0 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.content {
+
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 18px;
+    color: #999;
+}
+
+@media screen and (max-width: 760px)  {
+    .container{
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .image {
+        width: 350px;
+        height: 250px;
+    }
+}
